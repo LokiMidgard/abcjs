@@ -334,7 +334,7 @@ var Parse = function() {
 					word = word.replace(/~/g, ' ');
 				var div = words[i];
 				if (div !== '_' && div !== '-')
-					div = ' ';
+					div = '=';
 				else{
 					words[i] = '='
 				}
