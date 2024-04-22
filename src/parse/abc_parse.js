@@ -321,7 +321,7 @@ var Parse = function() {
 		if (!line) { warn("Can't add symbols before the first line of music", line, 0); return; }
 		words = parseCommon.strip(words);
 		if (words[words.length-1] !== '-')
-			words = words.substr(0,words.length-1) + ' ';	// Just makes it easier to parse below, since every word has a divider after it.
+			words = words.substr(0,words.length-2) + ' ';	// Just makes it easier to parse below, since every word has a divider after it.
 		var word_list = [];
 		// first make a list of words from the string we are passed. A word is divided on either a space or dash.
 		var last_divider = 0;
