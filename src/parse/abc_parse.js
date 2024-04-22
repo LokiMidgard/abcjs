@@ -337,6 +337,7 @@ var Parse = function() {
 					div = '=';
 				else{
 					words[i] = '='
+					word[0] = '!'
 				}
 				word_list.push({syllable: tokenizer.translateString(word), divider: div});
 				replace = false;
