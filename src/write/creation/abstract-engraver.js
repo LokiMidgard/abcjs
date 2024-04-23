@@ -765,7 +765,7 @@ AbstractEngraver.prototype.addLyric = function (abselem, elem) {
 	var lyricStr = "";
 	elem.lyric.forEach(function (ly) {
 		var div = ly.divider === ' ' ? "" : ly.divider;
-		lyricStr += ly.syllable + div + "\n";
+		lyricStr += ly.syllable +  "\n";
 	});
 	var lyricDim = this.getTextSize.calc(lyricStr, 'vocalfont', "lyric");
 	var position = elem.positioning ? elem.positioning.vocalPosition : 'below';
