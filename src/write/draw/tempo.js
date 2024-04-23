@@ -26,7 +26,7 @@ function drawTempo(renderer, params) {
 		params.note.setX(x);
 		for (var i = 0; i < params.note.children.length; i++)
 			drawRelativeElement(renderer, params.note.children[i], x);
-		x += (params.note.w + 5);
+		x += (params.note.w + 50);
 		var str = "= " + params.tempo.bpm;
 		text = renderText(renderer, { x: x, y: y, text: str, type: 'tempofont', klass: 'abcjs-tempo', anchor: "start", noClass: true, name: "beats" });
 		size = renderer.controller.getTextSize.calc(str, 'tempofont', 'tempo', text);

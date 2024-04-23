@@ -334,11 +334,7 @@ var Parse = function() {
 					word = word.replace(/~/g, ' ');
 				var div = words[i];
 				if (div !== '_' && div !== '-')
-					div = '=';
-				else{
-					words[i] = '='
-					word[0] = '!'
-				}
+					div = ' ';
 				word_list.push({syllable: tokenizer.translateString(word), divider: div});
 				replace = false;
 				return true;
